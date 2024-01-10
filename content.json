@@ -1,0 +1,22 @@
+[
+    {
+        "website-name": "MYWEBPAGE - ",
+        "links": "<link rel='stylesheet' src='/assets/style/styles.css'>"
+    },
+    {
+        "data": [
+            {
+                "title": "Homepage",
+                "content": "<p>Hello World!</p><button onclick='Load(1,true);'>back</button>"
+            },
+            {
+                "title": "Details",
+                "content": "<h1>Hi</h1><button onclick='Load(0,true);'>link1</button><button onclick='Load(2,true);'>link2</button>"
+            },
+            {
+                "title": "Different",
+                "content": "<h1>This is page 2 btw</h1><button onclick='Load(1,true);'>back</button>"
+            }
+        ]
+    }
+]
