@@ -6,16 +6,19 @@
     {
         "data": [
             {
-                "title": "Homepage",
-                "content": "<p class='display-4 text-center mt-5'>This is the Homepage</p>"
+                "title": "home"
             },
             {
-                "title": "Details",
-                "content": "<div class='jumbotron'><h1 class='display-4'>Hello, world!</h1><p class='lead'>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p><hr class='my-4'><p>It uses utility classes for typography and spacing to space content out within the larger container.</p><p class='lead'><a class='btn btn-primary btn-lg' href='#' role='button' onclick='Load(0,true);'>Learn more</a></p></div>"
+                "title": "details"
             },
             {
-                "title": "Different",
-                "content": "<h1 class='display-5'>This is page 2 btw</h1><button onclick='Load(1,true);'>back</button>"
+                "title": "features"
+            },
+            {
+                "title": "MARKDOWN"
+            },
+            {
+                "title": "index"
             }
         ]
     }
