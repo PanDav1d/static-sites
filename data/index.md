@@ -4,6 +4,6 @@
 #### undertitle
 - what
 - the
-- fuck
+- f*ck
 
 `some code`

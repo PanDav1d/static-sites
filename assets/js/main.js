@@ -9,6 +9,21 @@ function init() {
     } else {
         Load("index");
     }
+    LoadNavBar();
+}
+
+function LoadNavBar() {
+    const navbar = document.getElementById("navbar");
+    fetch("/content.json").then(response => response.json()).then(json => {
+        navbar.innerHTML = "";
+        for (const item of json[0]["navbar"]) {
+            if (window.location.hash.substring(1) == item.link) {
+                navbar.innerHTML += `<li class='nav-item active'><a class='nav-link' href='#' onclick='Load("${item.link}")'>${item.title}<spanclass='sr-only'></span></a></li>`;
+            } else {
+                navbar.innerHTML += `<li class='nav-item'><a class='nav-link' href='#' onclick='Load("${item.link}")'>${item.title}<spanclass='sr-only'></span></a></li>`;
+            }
+        }
+    });
 }
 
 function Load(name) {
@@ -28,6 +43,8 @@ function Load(name) {
                         var html = converter.makeHtml(text);
                         app.innerHTML = html;
                         window.location.hash = item.title;
+                        document.title = json[0]["website-name"] + name;
+                        LoadNavBar();
                     });
                 }
                 else {

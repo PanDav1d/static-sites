@@ -1,7 +1,25 @@
 [
     {
         "website-name": "MYWEBPAGE - ",
-        "links": "<link rel='stylesheet' src='/assets/style/styles.css'>"
+        "links": "<link rel='stylesheet' src='/assets/style/styles.css'>",
+        "navbar": [
+            {
+                "title": "Home",
+                "link": "index"
+            },
+            {
+                "title": "Feature",
+                "link": "features"
+            },
+            {
+                "title": "Details",
+                "link": "details"
+            },
+            {
+                "title": "Pricing",
+                "link": "pricing"
+            }
+        ]
     },
     {
         "data": [
@@ -19,6 +37,9 @@
             },
             {
                 "title": "index"
+            },
+            {
+                "title": "pricing"
             }
         ]
     }

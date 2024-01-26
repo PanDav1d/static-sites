@@ -1,0 +1,10 @@
+#app {
+    margin: 2% 5%;
+}
+
+blockquote {
+    background-color: #dfdfdf;
+    border-radius: 5px;
+    padding: 1%;
+    color: black;
+}
