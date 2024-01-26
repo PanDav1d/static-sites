@@ -1,1 +1,1 @@
-# here you can find the details
+# Let me explain the idea

@@ -1,9 +1,5 @@
-# this is the index page
-- how dare you
-- man
-### undertitle
-- what
-- the
-- f*ck
+# Welcome on static-sites Demo
 
-`some code`
+###### Check out the features in the: <a href="#" onclick="Load('features');">Features</a> section
+
+###### Find out about the project in the <a href="#" onclick="Load('details')">About</a>

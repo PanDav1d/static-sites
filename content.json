@@ -12,7 +12,7 @@
                 "link": "features"
             },
             {
-                "title": "Details",
+                "title": "About",
                 "link": "details"
             },
             {
@@ -28,16 +28,12 @@
                     "link":"index"
                 },
                 {
-                    "title":"Features",
+                    "title":"About",
                     "link":"features"
                 },
                 {
                     "title": "FAQs",
                     "link": "faqs"
-                },
-                {
-                    "title": "About",
-                    "link": "about"
                 }
             ]
         }
