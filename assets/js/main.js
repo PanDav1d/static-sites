@@ -10,6 +10,7 @@ function init() {
         Load("index");
     }
     LoadNavBar();
+    LoadFooter();
 }
 
 function LoadNavBar() {
@@ -22,6 +23,16 @@ function LoadNavBar() {
             } else {
                 navbar.innerHTML += `<li class='nav-item'><a class='nav-link' href='#' onclick='Load("${item.link}")'>${item.title}<spanclass='sr-only'></span></a></li>`;
             }
+        }
+    });
+}
+
+function LoadFooter(){
+    const footer = document.getElementById("footer");
+    fetch("/content.json").then(response => response.json()).then(json => {
+        footer.innerHTML = "";
+        for(const item of json[0]["footer"][0]["links"]){
+            footer.innerHTML += `<li class="nav-item"><a class="nav-link px-2 text-muted" onclick='Load("${item.link}");'>${item.title}</a></li>`;
         }
     });
 }
@@ -43,8 +54,9 @@ function Load(name) {
                         var html = converter.makeHtml(text);
                         app.innerHTML = html;
                         window.location.hash = item.title;
-                        document.title = json[0]["website-name"] + name;
+                        document.title = json[0]["website-name"] + " - " + name;
                         LoadNavBar();
+                        document.getElementById("navbar-title").innerHTML = json[0]["website-name"];
                     });
                 }
                 else {

@@ -1,6 +1,6 @@
 [
     {
-        "website-name": "MYWEBPAGE - ",
+        "website-name": "MYWEBPAGE",
         "links": "<link rel='stylesheet' src='/assets/style/styles.css'>",
         "navbar": [
             {
@@ -8,7 +8,7 @@
                 "link": "index"
             },
             {
-                "title": "Feature",
+                "title": "Features",
                 "link": "features"
             },
             {
@@ -19,6 +19,28 @@
                 "title": "Pricing",
                 "link": "pricing"
             }
+        ],
+        "footer":
+        [{
+            "links":[
+                {
+                    "title":"Home",
+                    "link":"index"
+                },
+                {
+                    "title":"Features",
+                    "link":"features"
+                },
+                {
+                    "title": "FAQs",
+                    "link": "faqs"
+                },
+                {
+                    "title": "About",
+                    "link": "about"
+                }
+            ]
+        }
         ]
     },
     {
