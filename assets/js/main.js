@@ -47,13 +47,13 @@ function Load(name) {
                 document.getElementById("navbarNavDropdown").classList.remove("show");
             }
 
-            for (const item of json[1]["data"]) {
-                if (item.title == name) {
-                    fetch("./data/" + item.title + ".md").then(response => response.text()).then(text => {
+            for (const item of json[0]["links"]) {
+                if (item == name) {
+                    fetch("./data/" + item + ".md").then(response => response.text()).then(text => {
                         var converter = new showdown.Converter();
                         var html = converter.makeHtml(text);
                         app.innerHTML = html;
-                        window.location.hash = item.title;
+                        window.location.hash = item;
                         document.title = json[0]["website-name"] + " - " + name;
                         LoadNavBar();
                         document.getElementById("navbar-title").innerHTML = json[0]["website-name"];

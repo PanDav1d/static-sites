@@ -1,7 +1,6 @@
 [
     {
         "website-name": "MYWEBPAGE",
-        "links": "<link rel='stylesheet' src='/assets/style/styles.css'>",
         "navbar": [
             {
                 "title": "Home",
@@ -37,28 +36,13 @@
                 }
             ]
         }
-        ]
-    },
-    {
-        "data": [
-            {
-                "title": "home"
-            },
-            {
-                "title": "details"
-            },
-            {
-                "title": "features"
-            },
-            {
-                "title": "MARKDOWN"
-            },
-            {
-                "title": "index"
-            },
-            {
-                "title": "pricing"
-            }
+        ],
+        "links":
+        [
+            "details",
+            "features",
+            "index",
+            "pricing"
         ]
     }
 ]
